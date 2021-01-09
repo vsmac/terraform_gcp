@@ -1,0 +1,219 @@
+{
+    "displayName": "GCE VM Instance disk Monitoring",
+    "gridLayout": {
+      "columns": "2",
+      "widgets": [
+        {
+          "title":"disk utilization for  hdb-appdev-us-central1-a-p1",
+          "xyChart":{
+             "dataSets":[
+                {
+                   "timeSeriesQuery":{
+                      "timeSeriesQueryLanguage":"fetch gce_instance::agent.googleapis.com/disk/percent_used | filter (metadata.system_labels.name == 'hdb-appdev-us-central1-a-p1') | group_by 1m, [value_percent_used_mean: mean(value.percent_used)] | every 1m"
+                   },
+                   "plotType":"LINE"
+                }
+             ],
+             "timeshiftDuration":"0s",
+             "yAxis":{
+                "label":"y1Axis",
+                "scale":"LINEAR"
+             },
+             "chartOptions":{
+                "mode":"COLOR"
+             }
+          }
+        },
+        {
+          "title":"disk utilization for hdb-appdev-us-central1-b-p1 ",
+          "xyChart":{
+             "dataSets":[
+                {
+                   "timeSeriesQuery":{
+                      "timeSeriesQueryLanguage":"fetch gce_instance::agent.googleapis.com/disk/percent_used | filter (metadata.system_labels.name == 'hdb-appdev-us-central1-b-p1') | group_by 1m, [value_percent_used_mean: mean(value.percent_used)] | every 1m"
+                   },
+                   "plotType":"LINE"
+                }
+             ],
+             "timeshiftDuration":"0s",
+             "yAxis":{
+                "label":"y1Axis",
+                "scale":"LINEAR"
+             },
+             "chartOptions":{
+                "mode":"COLOR"
+             }
+          }
+       },
+        {
+          "title":"disk utilization for hvp-appdev-us-central1-a-p1-0",
+          "xyChart":{
+             "dataSets":[
+                {
+                   "timeSeriesQuery":{
+                      "timeSeriesQueryLanguage":"fetch gce_instance::agent.googleapis.com/disk/percent_used | filter (metadata.system_labels.name == 'hvp-appdev-us-central1-a-p1-0') | group_by 1m, [value_percent_used_mean: mean(value.percent_used)] | every 1m"
+                   },
+                   "plotType":"LINE"
+                }
+             ],
+             "timeshiftDuration":"0s",
+             "yAxis":{
+                "label":"y1Axis",
+                "scale":"LINEAR"
+             },
+             "chartOptions":{
+                "mode":"COLOR"
+             }
+          }
+       },
+        {
+          "title":"disk utilization for hvp-appdev-us-central1-a-p1-1",
+          "xyChart":{
+             "dataSets":[
+                {
+                   "timeSeriesQuery":{
+                      "timeSeriesQueryLanguage":"fetch gce_instance::agent.googleapis.com/disk/percent_used | filter (metadata.system_labels.name == 'hvp-appdev-us-central1-a-p1-1') | group_by 1m, [value_percent_used_mean: mean(value.percent_used)] | every 1m"
+                   },
+                   "plotType":"LINE"
+                }
+             ],
+             "timeshiftDuration":"0s",
+             "yAxis":{
+                "label":"y1Axis",
+                "scale":"LINEAR"
+             },
+             "chartOptions":{
+                "mode":"COLOR"
+             }
+          }
+       },
+        {
+          "title":"disk utilization for hvp-appdev-us-central1-a-p1-2",
+          "xyChart":{
+             "dataSets":[
+                {
+                   "timeSeriesQuery":{
+                      "timeSeriesQueryLanguage":"fetch gce_instance::agent.googleapis.com/disk/percent_used | filter (metadata.system_labels.name == 'hvp-appdev-us-central1-a-p1-2') | group_by 1m, [value_percent_used_mean: mean(value.percent_used)] | every 1m"
+                   },
+                   "plotType":"LINE"
+                }
+             ],
+             "timeshiftDuration":"0s",
+             "yAxis":{
+                "label":"y1Axis",
+                "scale":"LINEAR"
+             },
+             "chartOptions":{
+                "mode":"COLOR"
+             }
+          }
+       },
+        {
+          "title":"disk utilization for hvp-appdev-us-central1-b-p1-0",
+          "xyChart":{
+             "dataSets":[
+                {
+                   "timeSeriesQuery":{
+                      "timeSeriesQueryLanguage":"fetch gce_instance::agent.googleapis.com/disk/percent_used | filter (metadata.system_labels.name == 'hvp-appdev-us-central1-b-p1-0') | group_by 1m, [value_percent_used_mean: mean(value.percent_used)] | every 1m"
+                   },
+                   "plotType":"LINE"
+                }
+             ],
+             "timeshiftDuration":"0s",
+             "yAxis":{
+                "label":"y1Axis",
+                "scale":"LINEAR"
+             },
+             "chartOptions":{
+                "mode":"COLOR"
+             }
+          }
+       },
+        {
+          "title":"disk utilization for hvp-appdev-us-central1-b-p1-1",
+          "xyChart":{
+             "dataSets":[
+                {
+                   "timeSeriesQuery":{
+                      "timeSeriesQueryLanguage":"fetch gce_instance::agent.googleapis.com/disk/percent_used | filter (metadata.system_labels.name == 'hvp-appdev-us-central1-b-p1-1') | group_by 1m, [value_percent_used_mean: mean(value.percent_used)] | every 1m"
+                   },
+                   "plotType":"LINE"
+                }
+             ],
+             "timeshiftDuration":"0s",
+             "yAxis":{
+                "label":"y1Axis",
+                "scale":"LINEAR"
+             },
+             "chartOptions":{
+                "mode":"COLOR"
+             }
+          }
+       },
+        {
+          "title":"disk utilization for ilbnginx-appdev-us-central1-tt6m",
+          "xyChart":{
+             "dataSets":[
+                {
+                   "timeSeriesQuery":{
+                      "timeSeriesQueryLanguage":"fetch gce_instance::agent.googleapis.com/disk/percent_used | filter (metadata.system_labels.name == 'ilbnginx-appdev-us-central1-tt6m') | group_by 1m, [value_percent_used_mean: mean(value.percent_used)] | every 1m"
+                   },
+                   "plotType":"LINE"
+                }
+             ],
+             "timeshiftDuration":"0s",
+             "yAxis":{
+                "label":"y1Axis",
+                "scale":"LINEAR"
+             },
+             "chartOptions":{
+                "mode":"COLOR"
+             }
+          }
+       },
+        {
+          "title":"disk utilization for ilbnginx-appdev-us-central1-tvmt",
+          "xyChart":{
+             "dataSets":[
+                {
+                   "timeSeriesQuery":{
+                      "timeSeriesQueryLanguage":"fetch gce_instance::agent.googleapis.com/disk/percent_used | filter (metadata.system_labels.name == 'ilbnginx-appdev-us-central1-tvmt') | group_by 1m, [value_percent_used_mean: mean(value.percent_used)] | every 1m"
+                   },
+                   "plotType":"LINE"
+                }
+             ],
+             "timeshiftDuration":"0s",
+             "yAxis":{
+                "label":"y1Axis",
+                "scale":"LINEAR"
+             },
+             "chartOptions":{
+                "mode":"COLOR"
+             }
+          }
+       },
+        {
+          "title":"disk utilization for voice-dist",
+          "xyChart":{
+             "dataSets":[
+                {
+                   "timeSeriesQuery":{
+                      "timeSeriesQueryLanguage":"fetch gce_instance::agent.googleapis.com/disk/percent_used | filter (metadata.system_labels.name == 'voice-dist') | group_by 1m, [value_percent_used_mean: mean(value.percent_used)] | every 1m"
+                   },
+                   "plotType":"LINE"
+                }
+             ],
+             "timeshiftDuration":"0s",
+             "yAxis":{
+                "label":"y1Axis",
+                "scale":"LINEAR"
+             },
+             "chartOptions":{
+                "mode":"COLOR"
+             }
+          }
+       }
+      ]
+    }
+  }
+  
